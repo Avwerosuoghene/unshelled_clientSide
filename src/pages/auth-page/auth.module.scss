@@ -1,0 +1,40 @@
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+  background-color: #f5f5f5;
+
+  .error-msg {
+    color: red;
+  }
+
+  .auth-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 18px;
+    }
+
+    .login-button {
+      padding: 10px;
+
+      &:disabled {
+        background-color: gray;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
