@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { TextField, Button } from '@mui/material';
 import classes from './details.module.scss';
-import { DefaultService } from '../../services/default-service';
+import { DefaultService } from '../../../services/default-service';
 import LoadingBar, { LoadingBarRef } from 'react-top-loading-bar';
 
 const DetailsPage: React.FC<any> = () => {

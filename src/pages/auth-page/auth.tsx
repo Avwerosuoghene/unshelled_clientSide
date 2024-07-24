@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import classes from "./auth.module.scss";
 import { Box, Button, TextField } from "@mui/material";
 import LoadingBar, { LoadingBarRef } from "react-top-loading-bar";
-import { DefaultService } from "../services/default-service";
-import { AuthPayload } from "../models/payload";
+import { DefaultService } from "../../services/default-service";
+import { AuthPayload } from "../../models/payload";
 import { useNavigate } from "react-router";
 
 

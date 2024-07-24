@@ -4,8 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import Pagination from '@mui/material/Pagination';
 import classes from "./dsahboard.module.scss";
 import axios from 'axios';
-import { DefaultService } from '../../services/default-service';
-import { OrdersPayload } from '../../models/payload';
+import { DefaultService } from '../../../services/default-service';
+import { OrdersPayload } from '../../../models/payload';
 import LoadingBar, { LoadingBarRef } from 'react-top-loading-bar';
 
 const Dashboard: React.FC<any> = () => {
