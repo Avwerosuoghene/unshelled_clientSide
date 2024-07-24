@@ -38,11 +38,9 @@ const AuthenticationPage: React.FC<any> = () => {
             navigate('/main');
         }
 
-        console.log(result);
 
     }
         catch (error: any) {
-            console.error("Error authenticating user:", error);
             setErrorMsg(error.response.data.message);
             setTimeout(() => {
                 setErrorMsg(undefined);

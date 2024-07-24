@@ -29,10 +29,8 @@ const DetailsPage: React.FC<any> = () => {
             if (data.isSuccess) {
                 setOrder(data.data);
             } else {
-                console.error("Failed to fetch order details:", data.message);
             }
         } catch (error) {
-            console.error("Error fetching order details:", error);
             loadingBarRef.current?.complete();
             setLoading(false);
         }
@@ -55,7 +53,6 @@ const DetailsPage: React.FC<any> = () => {
             navigate('/main');
 
         } catch (error) {
-            console.error("Error deleting order:", error);
             loadingBarRef.current?.complete();
             setLoading(false);
         }

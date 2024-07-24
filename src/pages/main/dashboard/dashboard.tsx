@@ -54,10 +54,8 @@ const Dashboard: React.FC<any> = () => {
             loadingBarRef.current?.complete();
             const { data } = response.data;
             setOrders(data.data);
-            console.log(orders)
             setTotal(data.total);
         } catch (error) {
-            console.error('Error fetching data:', error);
             loadingBarRef.current?.complete();
         }
     };
